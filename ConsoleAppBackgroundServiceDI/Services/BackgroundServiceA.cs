@@ -18,7 +18,7 @@ namespace ConsoleAppBackgroundServiceDI.Services
             Console.WriteLine("Avvio servizio A in background");
             while (!stoppingToken.IsCancellationRequested)
             {
-                _salvagniniService.Stampa();
+                _salvagniniService.FileSystemWatcherStart();
                 // await Task.Delay(1000).Wait();
                 await Task.Delay(5000);
             }

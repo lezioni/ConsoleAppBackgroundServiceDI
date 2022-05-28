@@ -2,7 +2,14 @@
 {
     public class OpcClientConfiguration
     {
-        public string KepServerUrl { get; set; }
-        public string KepPort { get; set; } = "26543";
+        public Cfg Kepserver { get; set; }
+        public Cfg OpcMachines { get; set; }
+    }
+
+    public class Cfg
+    {
+        public string Url { get; set; }
+        public string Port { get; set; } = "26543";
+
     }
 }

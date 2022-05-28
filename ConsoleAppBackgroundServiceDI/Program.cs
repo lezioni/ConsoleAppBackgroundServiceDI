@@ -31,6 +31,7 @@ namespace ConsoleAppBackgroundServiceDI
 
                     services.AddSingleton<ISalvagniniService, SalvagniniService>();
                     services.AddSingleton<IMiddleAgeMachines, MariaDbService>();
+                    services.AddSingleton<IOpcClient, OpcClientService>();
 
                     services.AddHostedService<BackgroundServiceA>();
                     services.AddHostedService<BackgroundServiceB>();

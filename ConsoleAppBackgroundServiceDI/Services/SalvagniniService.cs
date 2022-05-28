@@ -16,7 +16,7 @@ namespace ConsoleAppBackgroundServiceDI.Services
             // Start file system watcher
         }
 
-        public void Stampa()
+        public void FileSystemWatcherStart()
         {
             Console.WriteLine("Ricevuto nuovo file, Invio stato macchina letto da : " + _salvagniniConfiguration.Nodes[0] + " a " + _globalConfiguration.ServiceName);
         }
